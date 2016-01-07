@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+    </head>
+
+    <body class="default">            
+        
+        <header class="header">
+            <nav class="nav">
+                <ul>
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+            <h2 class="sub title">Contact Kitty</h2>
+            <form class="flex column" method="POST">
+                
+                <input class="email input-field" type="email" placeholder="Your Email" name="_replyto" required />
+                <textarea class="message input-field" rows="10" cols="20" placeholder="Write me something nice!" required></textarea>
+
+                <input type="hidden" name="_subject" value="Email from Kitty's Portfolio!" />
+                <input type="text" name="_gotcha" style="display:none" />
+
+                <button class="button" type="submit">Send</button>
+
+            </form>
+        </section>
+        
+        <script src="./vendor/jquery-2.1.4.min.js"></script>
+        <script src="./js/contact.js"></script>
+
+    </body>
+</html>
